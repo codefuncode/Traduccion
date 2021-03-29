@@ -7,9 +7,127 @@
     <title>
       Document
     </title>
+    <style type="text/css">
+      h2{
+        margin-top: 50px;
+      }  
+       h3{
+        margin-top: 25px;
+      }
+    </style>
   </head>
   <body>
-    <div class="w3-container w3-margin">
+    <!--    <div class="w3-top">
+      <div class="w3-bar w3-light-grey">
+        <a class="w3-bar-item w3-button" href="#">
+          Home
+        </a>
+        <a class="w3-bar-item w3-button" href="#">
+          Link 1
+        </a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">
+            Dropdown
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a class="w3-bar-item w3-button" href="#">
+              Link 1
+            </a>
+            <a class="w3-bar-item w3-button" href="#">
+              Link 2
+            </a>
+            <a class="w3-bar-item w3-button" href="#">
+              Link 3
+            </a>
+          </div>
+        </div>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">
+            Dropdown
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a class="w3-bar-item w3-button" href="#">
+              Link 1
+            </a>
+            <a class="w3-bar-item w3-button" href="#">
+              Link 2
+            </a>
+            <a class="w3-bar-item w3-button" href="#">
+              Link 3
+            </a>
+          </div>
+        </div>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">
+            Dropdown
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a class="w3-bar-item w3-button" href="#">
+              Link 1
+            </a>
+            <a class="w3-bar-item w3-button" href="#">
+              Link 2
+            </a>
+            <a class="w3-bar-item w3-button" href="#">
+              Link 3
+            </a>
+          </div>
+        </div>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">
+            Dropdown
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a class="w3-bar-item w3-button" href="#">
+              Link 1
+            </a>
+            <a class="w3-bar-item w3-button" href="#">
+              Link 2
+            </a>
+            <a class="w3-bar-item w3-button" href="#">
+              Link 3
+            </a>
+          </div>
+        </div>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">
+            Dropdown
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a class="w3-bar-item w3-button" href="#">
+              Link 1
+            </a>
+            <a class="w3-bar-item w3-button" href="#">
+              Link 2
+            </a>
+            <a class="w3-bar-item w3-button" href="#">
+              Link 3
+            </a>
+          </div>
+        </div>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">
+            Dropdown
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a class="w3-bar-item w3-button" href="#">
+              Link 1
+            </a>
+            <a class="w3-bar-item w3-button" href="#">
+              Link 2
+            </a>
+            <a class="w3-bar-item w3-button" href="#">
+              Link 3
+            </a>
+          </div>
+        </div>
+        <a class="w3-bar-item w3-button" href="https://addons.mozilla.org/en-US/firefox/addon/read-aloud/reviews/" target="_blank">
+          Text to Speech Voice
+          <img alt="" class="w3-image" src="../img/texto-a-voz.png" style="width: 20px; height: 20px; margin-left: 10px; margin-top: -8px !important;"/>
+        </a>
+      </div>
+    </div> -->
+    <div class="w3-container w3-margin" style="margin-top:50px !important;">
       <h1>
         Introducción
       </h1>
@@ -55,7 +173,7 @@
       <p>
         MVC (Model-View-Controller) es un patrón de diseño de software construido alrededor de la interconexión de tres tipos de componentes principales, en un lenguaje de programación como PHP, a menudo con un fuerte enfoque en paradigmas de software de programación orientada a objetos (OOP). . Los tres tipos de componentes se denominan vagamente modelos, vistas y controladores. Hablemos de ellos individualmente y luego veamos cómo encajan. El modelo es donde se guarda toda la lógica comercial de una aplicación. La lógica empresarial puede ser cualquier cosa específica sobre cómo una aplicación almacena datos o utiliza servicios de terceros para cumplir con sus requisitos comerciales. Si la aplicación debe acceder a información en una base de datos, el código para hacerlo se mantendrá en el modelo. Si necesita, por ejemplo, obtener datos de existencias o tuitear sobre un nuevo producto, ese código también se mantendría en el modelo. La vista es donde se guardan todos los elementos de la interfaz de usuario de nuestra aplicación. Esto puede incluir nuestro marcado HTML, hojas de estilo CSS y archivos JavaScript. Todo lo que un usuario ve o con lo que interactúa se puede mantener en una vista y, a veces, lo que el usuario ve es en realidad una combinación de muchas vistas diferentes en la misma solicitud. El controlador es el componente que conecta modelos y vistas entre sí. Los controladores aíslan la lógica empresarial de un modelo de los elementos de la interfaz de usuario de una vista y manejan cómo responderá la aplicación a la interacción del usuario en la vista. Los controladores son el primer punto de entrada a este trío de componentes, porque la solicitud se pasa primero a un controlador, que luego creará una instancia de los modelos y vistas necesarios para cumplir con una solicitud a la aplicación. Ver la Figura 1-1
       </p>
-      <img alt="" class="w3-image" src="../img/modelovistacontroladorimagen.png"/>
+      <img alt="" class="w3-image" src="../img/Figure-1-1.png"/>
       <div class="">
         <div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-yellow">
           <p>
@@ -115,14 +233,81 @@
       <p>
         Zend Framework es una colección extensa de bibliotecas de código poco acopladas que pueden formar la base de una arquitectura MVC. Zend Framework requiere bastante esfuerzo para comprender y dominar en relación con otros marcos MVC populares. Está desarrollado por Zend Technologies y disfruta de todos los beneficios de una comunidad grande y estable y de una amplia adopción. Mientras que los marcos como CodeIgniter se esfuerzan por ser livianos, favoreciendo solo lo esencial, Zend Framework incluye bibliotecas que ayudan a los desarrolladores a utilizar una amplia gama de servicios y API de terceros.
       </p>
-    </div>
-    <footer class="w3-container w3-dark-grey">
-      <h5>
-        Sobre el Autor
-      </h5>
+      <div class="">
+        <div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-yellow">
+          <p>
+            Nota Puede descargar Zend Framework en http://framework.zend.com. También puede obtener más información sobre Zend en http://zend.com.
+          </p>
+        </div>
+      </div>
+      <h3>
+        CakePHP
+      </h3>
       <p>
-        Christopher Pitt es un desarrollador experimentado que vive en Ciudad del Cabo, Sudáfrica. Habiendo desarrollado y mantenido una plétora de sitios web de alto tráfico en PHP, ha creado una colección de habilidades y herramientas para abordar muchos de los problemas que aún enfrentan los nuevos desarrolladores de PHP. Trabaja para una empresa llamada Knnktr, que se especializa en desarrollo a largo plazo, social y móvil; aquí, pasa su tiempo compartido entre el desarrollo de código abierto y los proyectos basados ​​en el cliente. Es esposo y padre de dos hijos; es cristiano y soñador.
+        CakePHP es posiblemente el más popular de los tres marcos. A diferencia de los dos marcos anteriores, no se rige por ninguna entidad corporativa. Tiene una gran comunidad y es ampliamente adoptado. Favorece la convención sobre la configuración, lo que significa que muchos de los detalles más finos se asumen y automatizan. Esto es evidente en todas las áreas del marco, y a menudo se encontrará preguntándose cómo CakePHP está haciendo algo que no le pidió que lo hiciera, tanto para lo bueno como para lo malo. Esto significa que puede desarrollar una aplicación rápidamente, pero también que puede tener dificultades cuando lo necesite hacer cambios muy específicos. Esto incluso se ve en la herramienta de línea de comandos de generación de código: Bake. En cuestión de minutos, puede generar una aplicación de trabajo, simplemente siguiendo la línea de comandos mensajes y llenando los espacios en blanco con parámetros y comportamientos predeterminados.
       </p>
-    </footer>
+      <div class="">
+        <div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-yellow">
+          <p>
+            Nota Puede descargar CakePHP en http://cakephp.org.
+          </p>
+        </div>
+      </div>
+      <h2>
+        Patrones de diseño
+      </h2>
+      <a href="https://designpatternsphp.readthedocs.io/en/latest/README.html" target="_blank">
+        Puede leer sobre patrones de diseño PHP aquí.
+      </a>
+      <br/>
+      <p>
+        Nos centraremos en el patrón de diseño MVC y, para lograrlo, necesitaremos utilizar otros patrones de diseño más simples para las bibliotecas en las que se construye el marco. Los patrones de diseño que revisaremos a menudo se pueden aplicar al desarrollo de procedimientos, pero los veremos en el contexto de la programación orientada a objetos. Esto significa que trataremos con clases (planos que contienen propiedades y funciones de ejecución) y cómo interactúan entre sí. Si usted es Si no está familiarizado con algunos de los conceptos que siguen, es posible que desee consultar un manual de idioma o un sitio de referencia.
+      </p>
+      <div class="">
+        <div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-yellow">
+          <p>
+            Nota Si desea saber más sobre la programación orientada a objetos, o cualquiera de las otras palabras clave / conceptos que siguen, puede leer más en http://en.wikipedia.org/wiki/Object-oriented_programming.
+          </p>
+        </div>
+      </div>
+      <h3>
+        Singleton "Único"
+      </h3>
+      <p>
+        Cuando creamos software de programación orientada a objetos, nos ocupamos de muchas clases. Si bien es ideal diseñar estas clases de tal manera que muchas instancias puedan estar activas simultáneamente, habrá ocasiones en las que prácticamente solo necesitemos una instancia de una clase, para un propósito o contexto específico. Singleton es un patrón de diseño que garantiza que una clase solo pueda tener una instancia a la vez. Una clase Singleton tradicional mantiene una instancia de sí misma en un propiedad estática, y no se puede crear una instancia (o clonar) de la forma habitual en que lo hace una clase que no es Singleton. Los singleton tienen un método de acceso de instancia especial, que devuelve la propiedad de instancia interna o crea una nueva instancia para devolver y almacenar. Vea la Figura 1-2.
+      </p>
+      <img alt="" class="w3-image" src="../img/Figure-1-2.png"/>
+      <p>
+        <a href="https://es.wikipedia.org/wiki/Singleton" target="_blank">
+          Leer sobre Singleton en wikipedia
+        </a>
+        <br/>
+        <a href="https://en.wikipedia.org/wiki/Singleton_pattern" target="_blank">
+          Leer sobre Singleton en wikipedia en ingles
+        </a>
+      </p>
+      <h3>
+        Registry  "Registro"
+      </h3>
+      <p>
+        Un registro es una clase que puede almacenar y devolver instancias de clases estándar. Piense en ello como un director de equipo que saca a los jugadores del campo de juego y envía a otros nuevos según sea necesario. Usamos clases de Registro para administrar una cantidad finita de instancias de clases, por lo que no necesitamos seguir restableciendo clases de las que el Registro ya contiene instancias. Otra forma de pensar en una clase de registro es que nos ayuda a tratar las clases como Singletons, sin tener que hacer esas clases normales Singletons. Podríamos encontrarnos en una situación en la que necesitemos dos instancias de una clase. Quizás necesitemos conectarnos a dos bases de datos separadas, pero no queremos seguir conectándonos a ellas, por lo que usamos un Registro. Vea la Figura 1-3.
+      </p>
+      <img alt="" class="w3-image" src="../img/Figure-1-3.png"/>
+      <br/>
+      <a href="https://designpatternsphp.readthedocs.io/en/latest/Structural/Registry/README.html" target="_blank">
+        2.11. Registry
+      </a>
+      <br/>
+      <a href="https://blog.fedecarg.com/2007/10/26/registry-pattern-or-dependency-injection-container/" target="_blank">
+        Registry Pattern
+      </a>
+      <h3>
+        Fábrica
+      </h3>
+      <p>
+        Una fábrica es una clase que proporciona una interfaz singular para crear cualquier número de instancias, sin necesidad de especificar el tipo de clase que deben ser las instancias. Una fábrica elegirá qué clase instanciar en función de la entrada o lógica interna. Las fábricas son útiles cuando necesitamos realizar trabajos de bases de datos, pero podrían tener que lidiar con cualquier cantidad de controladores de bases de datos diferentes. Usamos una clase de fábrica para darnos la clase de controlador correcta, asegurando que todos nuestros controladores se ajusten a un interfaz estándar. Vea la Figura 1-4.
+      </p>
+      <img alt="" class="w3-image" src="../img/Figure-1-4.png"/>
+    </div>
   </body>
 </html>
