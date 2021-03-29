@@ -16,3 +16,9 @@ Objetivos
 
 		También debemos desarrollar un medio para identificar la estructura (y el uso previsto) de nuestras clases marco que depende del uso de
 		Código especial Comentarios.
+
+
+
+Carga automática
+
+Debido a que vamos a escribir un gran código, es seguro asumir que queremos estructurar claramente el código, para evitar la confusión a medida que aumenta la cantidad de código. Hay algunas formas en las que podríamos hacer esto, y uno de ellos está guardando trozos de código separados en archivos separados. Un problema que surge de este enfoque a la estructura del código es que tendremos que hacer referencia a estos externalistas de código desde un solo punto de entrada. Las solicitudes a un servidor web tienden a enrutarse a un solo archivo en el directorio Webroot del servidor. Por ejemplo, los servidores web de Apache generalmente se configuran para enrutar las solicitudes predeterminadas a index.php. Podemos mantener todo nuestro código de marco en este único archivo, o podemos dividirlo en varios archivos y hacerlo desde Index.PHP. PHP proporciona cuatro declaraciones básicas para que incluyamos scripts externos dentro del flujo del programa. Estos se muestran en la listado 2-1.
