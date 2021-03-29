@@ -1,0 +1,18 @@
+CAPÍTULO 2 Fundación
+
+
+Fundación
+
+Comenzaremos nuestro marco al observar un código fundamental (enfocado por OOP) en el que se basarán los componentes básicos. Lo primero que veremos es cómo ejecutar código que se distribuye en varios archivos. También veremos qué hacer cuando nos encontramos con errores. Finalmente, crearemos un medio conveniente de clasificación y recuperación de metadatos de clase.
+
+
+Objetivos
+		Necesitamos desarrollar un medio para cargar clases automáticamente. Las clases deben ubicarse en función de sus nombres, y estos nombres deben traducirse en una jerarquía de carpetas.
+
+		Necesitamos entender y definir subclases de excepción personalizados, para que podamos manejar los tipos de errores más comunes que podrían ocurrir.
+
+		También debemos definir un sistema de clases estáticas que incluyen
+		Métodos de utilidad para una serie de tipos de datos.
+
+		También debemos desarrollar un medio para identificar la estructura (y el uso previsto) de nuestras clases marco que depende del uso de
+		Código especial Comentarios.

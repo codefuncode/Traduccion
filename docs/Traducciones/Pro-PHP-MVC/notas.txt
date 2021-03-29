@@ -1,1 +1,6 @@
-notas.txt
+<footer class="w3-container w3-dark-grey">
+  Sobre el Autor
+</footer>
+<p>
+  Christopher Pitt es un desarrollador experimentado que vive en Ciudad del Cabo, Sudáfrica. Habiendo desarrollado y mantenido una plétora de sitios web de alto tráfico en PHP, ha creado una colección de habilidades y herramientas para abordar muchos de los problemas que aún enfrentan los nuevos desarrolladores de PHP. Trabaja para una empresa llamada Knnktr, que se especializa en desarrollo a largo plazo, social y móvil; aquí, pasa su tiempo compartido entre el desarrollo de código abierto y los proyectos basados ​​en el cliente. Es esposo y padre de dos hijos; es cristiano y soñador.
+</p>
