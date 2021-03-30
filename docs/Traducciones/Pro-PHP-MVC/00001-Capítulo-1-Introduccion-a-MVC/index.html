@@ -15,9 +15,9 @@
         margin-top: 25px;
       }
     </style>
-        <!-- Smartsupp Live Chat script -->
-<script type="text/javascript">
-var _smartsupp = _smartsupp || {};
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+      var _smartsupp = _smartsupp || {};
 _smartsupp.key = '537eb8ab4a2c201fe82e181274cb4e023c0a4590';
 window.smartsupp||(function(d) {
   var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
@@ -25,7 +25,7 @@ window.smartsupp||(function(d) {
   c.type='text/javascript';c.charset='utf-8';c.async=true;
   c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
 })(document);
-</script>
+    </script>
   </head>
   <body>
     <!--    <div class="w3-top">
@@ -293,14 +293,92 @@ window.smartsupp||(function(d) {
             Cuando creamos software de programación orientada a objetos, nos ocupamos de muchas clases. Si bien es ideal diseñar estas clases de tal manera que muchas instancias puedan estar activas simultáneamente, habrá ocasiones en las que prácticamente solo necesitemos una instancia de una clase, para un propósito o contexto específico. Singleton es un patrón de diseño que garantiza que una clase solo pueda tener una instancia a la vez. Una clase Singleton tradicional mantiene una instancia de sí misma en un propiedad estática, y no se puede crear una instancia (o clonar) de la forma habitual en que lo hace una clase que no es Singleton. Los singleton tienen un método de acceso de instancia especial, que devuelve la propiedad de instancia interna o crea una nueva instancia para devolver y almacenar. Vea la Figura 1-2.
           </p>
           <img alt="" class="w3-image" src="../img/Figure-1-2.png"/>
+          <h5>
+            Refernecias para comprender conceptos:
+          </h5>
+          <ul>
+            <li>
+              <a href="https://phpenthusiast.com/blog/the-singleton-design-pattern-in-php" target="_blank">
+                The singleton pattern in PHP
+              </a>
+            </li>
+            <li>
+              <a href="https://es.wikipedia.org/wiki/Singleton" target="_blank">
+                Leer sobre Singleton en wikipedia
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Singleton_pattern" target="_blank">
+                Leer sobre Singleton en wikipedia en ingles
+              </a>
+            </li>
+          </ul>
           <p>
-            <a href="https://es.wikipedia.org/wiki/Singleton" target="_blank">
-              Leer sobre Singleton en wikipedia
-            </a>
-            <br/>
-            <a href="https://en.wikipedia.org/wiki/Singleton_pattern" target="_blank">
-              Leer sobre Singleton en wikipedia en ingles
-            </a>
+            <div class="w3-panel w3-padding-large w3-light-grey" style="padding: 50px !important;">
+              <h5>
+                Puede visitar :
+                <a href="https://phpenthusiast.com/blog/the-singleton-design-pattern-in-php" target="_blank">
+                  The singleton pattern in PHP
+                </a>
+                , para visualizar toda la explicación original.
+              </h5>
+              <div class="w3-code jsHigh notranslate w3-padding-large" style="padding: 50px !important; border-color: #FFEB3B !important;">
+                // Clase general singleton
+                <br/>
+                class Singleton {
+                <br/>
+                // Mantenga la instancia de la clase.
+                <br/>
+                private static $instance = null;
+                <br/>
+                <br/>
+                // El constructor es privado para evitar la iniciación con código externo.
+                <br/>
+                private function __construct()
+                <br/>
+                {
+                <br/>
+                // El proceso costoso (por ejemplo, conexión db) va aquí.
+                <br/>
+                }
+                <br/>
+                <br/>
+                // El objeto se crea desde dentro de la propia clase solo si la clase no tiene instancia.
+                <br/>
+                public static function getInstance()
+                <br/>
+                {
+                <br/>
+                if (self::$instance == null)
+                <br/>
+                <br/>
+                {
+                <br/>
+                <br/>
+                self::$instance = new Singleton();
+                <br/>
+                <br/>
+                }
+                <br/>
+                <br/>
+                return self::$instance;
+                <br/>
+                <br/>
+                }
+                <br/>
+                <br/>
+                }
+                <br/>
+                // Todas las variables apuntan al mismo objeto.
+                <br/>
+                $object1 = Singleton::getInstance();
+                <br/>
+                $object2 = Singleton::getInstance();
+                <br/>
+                $object3 = Singleton::getInstance();
+                <br/>
+              </div>
+            </div>
           </p>
           <h4>
             Registro "Registry"
@@ -317,6 +395,232 @@ window.smartsupp||(function(d) {
           <a href="https://blog.fedecarg.com/2007/10/26/registry-pattern-or-dependency-injection-container/" target="_blank">
             Registry Pattern
           </a>
+          <div class="w3-panel w3-padding-large w3-light-grey" style="padding: 50px !important;">
+            <h5>
+              https://dzone.com/articles/practical-php-patterns/basic/practical-php-patterns-0
+            </h5>
+            <div class="w3-code jsHigh notranslate w3-padding-large" style="padding: 50px !important; border-color: #FFEB3B !important;">
+              <br/>
+              //
+              <br/>
+              // La clase de almacenamiento genérico ayuda a administrar datos globales.
+              <br/>
+              // Aquí el error es 'global'. Ningún dato debería ser realmente global:
+              <br/>
+              // como máximo en toda la solicitud.
+              <br/>
+              //
+              <br/>
+              // @category   Zend
+              <br/>
+              // @package    Zend_Registry
+              <br/>
+              // @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
+              <br/>
+              // @license    http://framework.zend.com/license/new-bsd New BSD License
+              <br/>
+              //
+              <br/>
+              class Zend_Registry extends ArrayObject
+              <br/>
+              {
+              <br/>
+              //
+              <br/>
+              //Nombre de clase del objeto de registro singleton.
+              <br/>
+              //@var cadena "string"
+              <br/>
+              //
+              <br/>
+              private static $_registryClassName = 'Zend_Registry';
+              <br/>
+              <br/>
+              //
+              <br/>
+              // El objeto de registro proporciona almacenamiento para objetos compartidos.
+              <br/>
+              // @var Zend_Registry
+              <br/>
+              //
+              <br/>
+              private static $_registry = null;
+              <br/>
+              <br/>
+              /**
+              <br/>
+              * Retrieves the default registry instance.
+              <br/>
+              * A Singleton is a recipe for hiding dependencies to a class.
+              <br/>
+              *
+              <br/>
+              * @return Zend_Registry
+              <br/>
+              */
+              <br/>
+              public static function getInstance()
+              <br/>
+              {
+              <br/>
+              if (self::$_registry === null) {
+              <br/>
+              self::init();
+              <br/>
+              }
+              <br/>
+              <br/>
+              return self::$_registry;
+              <br/>
+              }
+              <br/>
+              /**
+              <br/>
+              * Initialize the default registry instance.
+              <br/>
+              *
+              <br/>
+              * @return void
+              <br/>
+              */
+              <br/>
+              protected static function init()
+              <br/>
+              {
+              <br/>
+              self::setInstance(new self::$_registryClassName());
+              <br/>
+              }
+              <br/>
+              /**
+              <br/>
+              * getter method, basically same as offsetGet().
+              <br/>
+              *
+              <br/>
+              * This method can be called from an object of type Zend_Registry, or it
+              <br/>
+              * can be called statically.  In the latter case, it uses the default
+              <br/>
+              * static instance stored in the class.
+              <br/>
+              *
+              <br/>
+              * @param string $index - get the value associated with $index
+              <br/>
+              * @return mixed
+              <br/>
+              * @throws Zend_Exception if no entry is registerd for $index.
+              <br/>
+              */
+              <br/>
+              public static function get($index)
+              <br/>
+              {
+              <br/>
+              $instance = self::getInstance();
+              <br/>
+              <br/>
+              if (!$instance->offsetExists($index)) {
+              <br/>
+              require_once 'Zend/Exception.php';
+              <br/>
+              throw new Zend_Exception("No entry is registered for key '$index'");
+              <br/>
+              }
+              <br/>
+              return $instance->offsetGet($index);
+              <br/>
+              }
+              <br/>
+              <br/>
+              /**
+              <br/>
+              * setter method, basically same as offsetSet().
+              <br/>
+              *
+              <br/>
+              * This method can be called from an object of type Zend_Registry, or it
+              <br/>
+              * can be called statically.  In the latter case, it uses the default
+              <br/>
+              * static instance stored in the class.
+              <br/>
+              *
+              <br/>
+              * @param string $index The location in the ArrayObject in which to store
+              <br/>
+              *   the value.
+              <br/>
+              * @param mixed $value The object to store in the ArrayObject.
+              <br/>
+              * @return void
+              <br/>
+              */
+    public static function set($index, $value)
+              <br/>
+              {
+              <br/>
+              $instance = self::getInstance();
+              <br/>
+              $instance->offsetSet($index, $value);
+              <br/>
+              }
+              <br/>
+              /**
+              <br/>
+              * Returns TRUE if the $index is a named value in the registry,
+              <br/>
+              * or FALSE if $index was not found in the registry.
+              <br/>
+              *
+              <br/>
+              * @param  string $index
+              <br/>
+              * @return boolean
+              <br/>
+              */
+              <br/>
+              public static function isRegistered($index)
+              <br/>
+              {
+              <br/>
+              if (self::$_registry === null) {
+              <br/>
+              return false;
+              <br/>
+              }
+              <br/>
+              return self::$_registry->offsetExists($index);
+              <br/>
+              }
+              <br/>
+              /**
+              <br/>
+              * Constructs a parent ArrayObject with default
+              <br/>
+              * ARRAY_AS_PROPS to allow acces as an object
+              <br/>
+              *
+              <br/>
+              * @param array $array data array
+              <br/>
+              * @param integer $flags ArrayObject flags
+              <br/>
+              */
+              <br/>
+              public function __construct($array = array(), $flags = parent::ARRAY_AS_PROPS)
+              <br/>
+              {
+              <br/>
+              parent::__construct($array, $flags);
+              <br/>
+              }
+              <br/>
+              }
+              <br/>
+            </div>
+          </div>
           <h4>
             Fábrica "Factory"
           </h4>
@@ -359,5 +663,10 @@ window.smartsupp||(function(d) {
         </div>
       </div>
     </div>
+    <script src="https://www.w3schools.com/lib/w3codecolor.js">
+    </script>
+    <script>
+      w3CodeColor();
+    </script>
   </body>
 </html>
