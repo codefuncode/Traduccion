@@ -2,3 +2,4 @@ sudo /opt/lampp/lampp start
 
 Guia de estilo y buenas practicas PHP
 https://es.stackoverflow.com/questions/119811/guia-de-estilo-y-buenas-practicas-php
+

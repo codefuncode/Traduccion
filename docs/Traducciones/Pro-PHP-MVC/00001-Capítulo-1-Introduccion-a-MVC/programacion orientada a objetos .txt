@@ -1,0 +1,103 @@
+       <details>
+            <summary>
+              Programación orientada a objetos
+            </summary>
+            <div class="w3-container">
+              <div class="w3-card-4 w3-panel" style="background-color: white">
+                <h4>
+                  Programación orientada a objetos
+                </h4>
+                <p>
+                  Traducción de :
+                  <a href="http://en.wikipedia.org/wiki/object-oriented_programming">
+                    http://en.wikipedia.org/wiki/object-oriented_programming
+                  </a>
+                </p>
+                <p>
+                  Re-direcciones 'orientadas a objetos' aquí. Para conocer otros significados de orientado a objetos, consulte Orientación a objetos.
+                </p>
+                <p>
+                  La programación orientada a objetos (OOP) es un paradigma de programación basado en el concepto de 'objetos', que pueden contener datos y código: datos en forma de campos (a menudo conocidos como atributos o propiedades) y código, en forma de procedimientos. (a menudo conocidos como métodos).
+                </p>
+                <p>
+                  Una característica de los objetos es que los propios procedimientos de un objeto pueden acceder y, a menudo, modificar los campos de datos de sí mismos (los objetos tienen una noción de esto o de sí mismos). En OOP, los programas de computadora se diseñan haciéndolos a partir de objetos que interactúan entre sí.Los lenguajes de programación orientada a objetos son diversos, pero los más populares se basan en clases, lo que significa que los objetos son instancias de clases, que también determinan sus tipos.
+                </p>
+                <p>
+                  Muchos de los lenguajes de programación más utilizados (como C ++, Java, Python, etc.) son de paradigma múltiple y admiten la programación orientada a objetos en mayor o menor grado, normalmente en combinación con programación procedimental imperativa. Los lenguajes orientados a objetos importantes incluyen: (orden de lista basado en el índice TIOBE) Java, C ++, C #, Python, R, PHP, Visual Basic.NET, JavaScript, Ruby, Perl, Object Pascal, Objective-C, Dart, Swift, Scala , Kotlin, Common Lisp, MATLAB y Smalltalk.
+                </p>
+                <h4>
+                  Funciones
+                </h4>
+                <p>
+                  La programación orientada a objetos utiliza objetos, pero no todas las técnicas y estructuras asociadas se admiten directamente en lenguajes que afirman ser compatibles con POO. Las características enumeradas a continuación son comunes entre los lenguajes que se consideran fuertemente orientados a clases y objetos (o multi-paradigma con soporte de programación orientada a objetos), con notables excepciones mencionadas.
+                </p>
+                <h4>
+                  Compartido con lenguas no OOP
+                </h4>
+                <ol>
+                  <li>
+                    Variables que pueden almacenar información formateada en un pequeño número de tipos de datos incorporados como enteros y caracteres alfanuméricos. Esto puede incluir estructuras de datos como cadenas, listas y tablas de hash que están incorporadas o resultan de la combinación de variables utilizando los punteros de memoria.
+                  </li>
+                  <li>
+                    Procedimientos: también conocidos como funciones, métodos, rutinas o subrutinas, que toman la entrada, generan salida y manipulan datos. Las lenguas modernas incluyen construcciones de programación estructuradas como bucles y condicionales.
+                  </li>
+                </ol>
+                <p>
+                  El soporte de programación modular proporciona la capacidad de agrupar los procedimientos en archivos y módulos para fines organizativos. Los módulos están específicos, por lo que los identificadores en un módulo no entrarán en conflicto con un procedimiento o variable compartiendo el mismo nombre en otro archivo o módulo.
+                </p>
+                <h4>
+                  Objetos y clases
+                </h4>
+                <p>
+                  Los idiomas que admiten la programación orientada a objetos (OOP), generalmente usan la herencia para la reutilización de código y la extensibilidad en forma de clases o prototipos. Aquellos que usan clases admiten dos conceptos principales:
+                </p>
+                <ol>
+                  <li>
+                    Clases: las definiciones para el formato de datos y los procedimientos disponibles para un tipo determinado o clase de objeto; También puede contener datos y procedimientos (conocidos como métodos de clase), es decir, las clases contienen los miembros de datos y las funciones de los miembros
+                  </li>
+                  <li>
+                    Objetos - Instancias de clases
+                  </li>
+                </ol>
+                <p>
+                  Los objetos a veces corresponden a las cosas que se encuentran en el mundo real. Por ejemplo, un programa de gráficos puede tener objetos como "Círculo", "Cuadrado", "Menú". Un sistema de compras en línea podría tener objetos como "Carrito de la compra", "Cliente" y "Producto".  A veces, los objetos representan más entidades abstractas, como un objeto que representa un archivo abierto, o un objeto que proporciona el servicio de traducción de mediciones de EE. UU. CUANIDARIO a METRIC.
+                </p>
+                <p>
+                  La programación orientada a objetos es más que solo clases y objetos; Es un paradigma de programación completo basado en los objetos [SIC] (estructuras de datos) que contienen campos y métodos de datos. Es esencial entender esto; El uso de clases para organizar un montón de métodos no relacionados juntos no es orientación de objetos.
+                </p>
+                <h4>
+                  Junade Ali, Mastering PHP Design Patterns
+                </h4>
+                <p>
+                  Se dice que cada objeto es una instancia de una clase particular (por ejemplo, un objeto con su campo de nombre establecido en "Mary" podría ser una instancia de Empleado de clase). Los procedimientos en la programación orientada a objetos se conocen como métodos; Las variables también se conocen como campos, miembros, atributos o propiedades. Esto lleva a los siguientes términos:
+                </p>
+                <ol>
+                  <li>
+                    Variables de clase: pertenecen a la clase en su conjunto; Solo hay una copia de cada uno.
+                  </li>
+                  <li>
+                    Variables de instancia o atributos: datos que pertenecen a objetos individuales; Cada objeto tiene su propia copia de cada uno.
+                  </li>
+                  <li>
+                    Variables de los miembros: se refiere tanto a las variables de clase como de instancia que están definidas por una clase en particular.
+                  </li>
+                  <li>
+                    Métodos de clase: pertenecen a la clase en su conjunto y tienen acceso solo a las variables de clase y las entradas de la llamada de procedimiento.
+                  </li>
+                  <li>
+                    Métodos de instancia: pertenecen a objetos individuales, y tienen acceso a las variables de instancia para el objeto específico en que se llaman, entradas y variables de clase
+                  </li>
+                </ol>
+                <p>
+                  Se accede a los objetos algo similares a las variables con una estructura interna compleja, y en muchos idiomas son punteros efectivamente, sirviendo como referencias reales a una sola instancia de dicho objeto en la memoria dentro de un montón o pila. Proporcionan una capa de abstracción que se puede usar para separar internos del código externo. El código externo puede usar un objeto llamando a un método de instancia específico con un cierto conjunto de parámetros de entrada, lea una variable de instancia, o escriba a una variable de instancia. Los objetos se crean llamando a un tipo especial de método en la clase conocida como constructor. Un programa puede crear muchos casos de la misma clase que funciona, que operan de forma independiente. Esta es una forma fácil de usar los mismos procedimientos en diferentes conjuntos de datos.
+                </p>
+                <p>
+                  La programación orientada a objetos que utiliza clases a veces se denomina programación basada en la clase, mientras que la programación basada en prototipos no suele utilizar clases. Como resultado, se usa una terminología significativamente diferente pero análoga para definir los conceptos de objeto y instancia.
+                </p>
+                <p>
+                  En algunas lenguas, las clases y los objetos pueden componer usando otros conceptos como rasgos y mixinas.
+                </p>
+            
+              </div>
+            </div>
+          </details>

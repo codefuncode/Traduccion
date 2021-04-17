@@ -1,0 +1,21 @@
+Diferentes mas populares  patrones de diseño en PHP
+
+
+https://www.tutorialspoint.com/php/php_design_patterns.htm
+
+https://designpatternsphp.readthedocs.io/en/latest/README.html
+
+https://designpatternsphp.readthedocs.io/en/latest/Structural/Registry/README.html
+
+
+imperativo en el que el programador instruye a la máquina cómo cambiar su estado,
+
+procedimental que agrupa las instrucciones en procedimientos,
+orientado a objetos que agrupa las instrucciones con la parte del estado en el que operan,
+
+declarativo en el que el programador simplemente declara las propiedades del resultado deseado, pero no cómo calcularlo
+
+funcional en el que el resultado deseado se declara como el valor de una serie de aplicaciones de función,
+lógica en la que el resultado deseado se declara como la respuesta a una pregunta sobre un sistema de hechos y reglas,
+matemático en el que el resultado deseado se declara como la solución de un problema de optimización
+reactivo en el que se declara el resultado deseado con flujos de datos y la propagación del cambio

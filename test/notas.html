@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Document</title>
+</head>
+<body>
+	<p>El patrón de registro: por Troels Knak-Nielsen
+
+La tarea que un registro pretende resolver es convertir los objetos compartidos (las dependencias) en un objeto que lo necesita (el dependiente). Hay varias formas de resolver esa tarea y un registro es una de ellas. O más bien ... son dos. El registro puede indicar un contenedor de acceso global para objetos compartidos, pero también puede indicar un contenedor local (transmitido). A falta de mejores términos, podemos llamarlos un registro global frente a un registro local. Cuando las personas hablan de un registro, generalmente se refieren a la variante global.
+
+Si la definición de un registro es un contenedor de objetos compartidos, entonces la implementación más simple posible es una matriz. La variante más simple de un registro global es simplemente $ GLOBALS. Por el contrario, una matriz de instancias transmitida es un registro local igualmente primitivo. Se puede usar un objeto para implementar una variante más sofisticada de un registro, pero sigue cumpliendo la misma función que la variante primitiva.
+
+El problema con un registro global, ya sea primitivo o sofisticado, es que es un símbolo global. La mayoría de los programadores estarán de acuerdo en que las variables globales tienen un mal diseño, y eso también se aplica a un registro global. Aunque esto es de conocimiento común, mucha gente no es consciente de que los patrones con nombres elegantes, como Singleton o Registry, son tipos de variables globales y, por lo tanto, tienen los mismos problemas fundamentales que otras variables globales. El objetivo de comparar un registro (global) con $ GLOBALS era enfatizar este asunto.
+
+Ahora, incluso si usa un registro local (por ejemplo, pasarlo), todavía hay problemas con él. Al pasar un registro que contiene dependencias, en lugar de pasar las dependencias reales, hay dos problemas. La primera es que introduce una dependencia adicional (por ejemplo, la dependencia del registro). Sin embargo, este es un problema menor; Mucho peor es que se vuelve menos claro qué dependencias reales tiene el dependiente. Con el estilo de paso, siempre puede ver en la firma de un constructor de objetos, cuáles son las dependencias. Con un estilo de registro, debe leer el código real.
+
+El registro ofrece un beneficio sobre el estilo de paso; Es mucho más fácil cambiar las dependencias, porque solo tiene que realizar cambios en las dependientes. Usando el estilo de paso, tendrá que actualizar cualquier clase, que usa el dependiente.
+
+La otra opción es un contenedor de inyección de dependencia. Esto tiene los beneficios de ambos mundos, sin ninguno de los problemas. El problema con esto es que es una construcción bastante grande, por lo que para aplicaciones más pequeñas, se siente como una exageración.
+
+Considerándolo todo, un registro local no es algo que deteste. Sin embargo, prefiero el estilo de pase. Si se vuelve difícil de manejar, prefiero cambiar a un contenedor de inyección, que a un registro.</p>
+</body>
+</html>
